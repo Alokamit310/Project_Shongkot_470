@@ -14,7 +14,7 @@ The platform integrates real-time weather data, AI-based flood risk prediction, 
 | Alok Sarker Amit | Developer | [GitHub Profile](https://github.com/Alokamit310) |
 | Sumaiya Akhter Moon     | Developer | [ GitHub Profile](https://github.com/moon0391)                               |
 | khandaker khairul Alam Himel    | Developer | [GitHub Profile](https://github.com/HimelKhandaker)                               |
-| Mustakim Bin Ahmed    | Developer | Add GitHub Profile                               |
+| Mustakim Bin Ahmed    | Developer | [Add GitHub Profile](https://github.com/Safibaee)                               |
 
 
 
