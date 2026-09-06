@@ -29,6 +29,16 @@ const incidentSchema = new mongoose.Schema(
             required: true,
         },
 
+        latitude: {
+            type: Number,
+            default: null,
+        },
+
+        longitude: {
+            type: Number,
+            default: null,
+        },
+
         incidentType: {
             type: String,
             enum: [
@@ -53,13 +63,22 @@ const incidentSchema = new mongoose.Schema(
 
         severity: {
             type: String,
-            enum: ["Low", "Medium", "High", "Critical"],
+            enum: [
+                "Low",
+                "Medium",
+                "High",
+                "Critical",
+            ],
             default: "High",
         },
 
         status: {
             type: String,
-            enum: ["Open", "In Progress", "Resolved"],
+            enum: [
+                "Open",
+                "In Progress",
+                "Resolved",
+            ],
             default: "Open",
         },
 
@@ -73,4 +92,8 @@ const incidentSchema = new mongoose.Schema(
     }
 );
 
-module.exports = mongoose.model("Incident", incidentSchema);
+module.exports =
+    mongoose.model(
+        "Incident",
+        incidentSchema
+    );
