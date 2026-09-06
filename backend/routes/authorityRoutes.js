@@ -2,19 +2,21 @@ const express = require("express");
 
 const router = express.Router();
 
-const { getDashboard } = require("../controllers/authorityController");
+const {
+    getDashboard,
+} = require("../controllers/authorityController");
 
-const { protect } = require("../middleware/authMiddleware");
-const authorize = require("../middleware/roleMiddleware");
+const {
+    protect,
+} = require("../middleware/authMiddleware");
 
-// =====================================
-// Authority Dashboard
-// =====================================
+const authorize =
+    require("../middleware/roleMiddleware");
 
 router.get(
     "/dashboard",
     protect,
-    authorize("admin", "authority"),
+    authorize("authority", "admin"),
     getDashboard
 );
 

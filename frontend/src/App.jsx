@@ -16,6 +16,7 @@ import {
     Siren,
 } from "lucide-react";
 
+import Profile from "./pages/Profile";
 import PublicLayout from "./components/PublicLayout";
 import ProtectedLayout from "./components/ProtectedLayout";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -26,6 +27,7 @@ import Incidents from "./pages/Incidents";
 import Districts from "./pages/Districts";
 import Hospitals from "./pages/Hospitals";
 import Broadcasts from "./pages/Broadcasts";
+import Analytics from "./pages/Analytics";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import CreateIncident from "./pages/CreateIncident";
@@ -33,10 +35,12 @@ import Unauthorized from "./pages/Unauthorized";
 
 
 function LandingPage() {
+
     return (
+
         <div className="landing-page">
 
-            {/* Animated Background */}
+
             <div className="landing-grid"></div>
 
             <div className="landing-glow landing-glow-one"></div>
@@ -47,49 +51,66 @@ function LandingPage() {
             <div className="landing-orb orb-three"></div>
 
 
-            {/* Top Status */}
             <div className="landing-status">
+
                 <span className="status-pulse"></span>
-                <span>LIVE EMERGENCY INTELLIGENCE NETWORK</span>
+
+                <span>
+                    LIVE EMERGENCY INTELLIGENCE NETWORK
+                </span>
+
             </div>
 
 
-            {/* Main Content */}
             <div className="landing-inner">
+
 
                 <div className="landing-main">
 
+
                     <div className="landing-badge">
+
                         <Waves size={16} />
+
                         BANGLADESH FLOOD CRISIS INTELLIGENCE
+
                     </div>
 
 
                     <h1 className="landing-title">
+
                         When Crisis Strikes,
+
                         <br />
 
                         <span>
                             Intelligence Responds.
                         </span>
+
                     </h1>
 
 
                     <p className="landing-description">
+
                         Shongkot connects real-time weather intelligence,
                         citizens, authorities, hospitals, and emergency
                         responders into one unified crisis-response network.
+
                     </p>
 
 
                     <div className="landing-actions">
 
+
                         <Link
                             to="/login"
                             className="landing-button landing-primary"
                         >
+
                             Enter Response Network
+
                             <ArrowRight size={18} />
+
                         </Link>
 
 
@@ -97,36 +118,53 @@ function LandingPage() {
                             to="/register"
                             className="landing-button landing-secondary"
                         >
+
                             Create Account
+
                         </Link>
 
+
                     </div>
 
 
-                    {/* Live Indicators */}
                     <div className="landing-indicators">
 
-                        <div className="landing-indicator">
-                            <span className="indicator-dot green"></span>
-                            <span>Weather Intelligence Online</span>
-                        </div>
 
                         <div className="landing-indicator">
-                            <span className="indicator-dot blue"></span>
-                            <span>Emergency Network Active</span>
+
+                            <span className="indicator-dot green"></span>
+
+                            <span>
+                                Weather Intelligence Online
+                            </span>
+
                         </div>
+
+
+                        <div className="landing-indicator">
+
+                            <span className="indicator-dot blue"></span>
+
+                            <span>
+                                Emergency Network Active
+                            </span>
+
+                        </div>
+
 
                     </div>
+
 
                 </div>
 
 
-                {/* Right Intelligence Panel */}
                 <div className="landing-command-panel">
+
 
                     <div className="command-panel-header">
 
                         <div>
+
                             <span className="panel-label">
                                 SHONGKOT SYSTEM
                             </span>
@@ -134,7 +172,9 @@ function LandingPage() {
                             <h2>
                                 Crisis Intelligence
                             </h2>
+
                         </div>
+
 
                         <Activity
                             size={22}
@@ -149,15 +189,27 @@ function LandingPage() {
 
                     <div className="command-metrics">
 
+
                         <div className="command-metric">
 
                             <div className="metric-icon">
-                                <MapPinned size={19} />
+
+                                <MapPinned
+                                    size={19}
+                                />
+
                             </div>
 
                             <div>
-                                <strong>64</strong>
-                                <span>Districts Monitored</span>
+
+                                <strong>
+                                    64
+                                </strong>
+
+                                <span>
+                                    Districts Monitored
+                                </span>
+
                             </div>
 
                         </div>
@@ -166,12 +218,23 @@ function LandingPage() {
                         <div className="command-metric">
 
                             <div className="metric-icon">
-                                <Radio size={19} />
+
+                                <Radio
+                                    size={19}
+                                />
+
                             </div>
 
                             <div>
-                                <strong>LIVE</strong>
-                                <span>Weather Intelligence</span>
+
+                                <strong>
+                                    LIVE
+                                </strong>
+
+                                <span>
+                                    Weather Intelligence
+                                </span>
+
                             </div>
 
                         </div>
@@ -180,15 +243,27 @@ function LandingPage() {
                         <div className="command-metric">
 
                             <div className="metric-icon">
-                                <Siren size={19} />
+
+                                <Siren
+                                    size={19}
+                                />
+
                             </div>
 
                             <div>
-                                <strong>24/7</strong>
-                                <span>Emergency Response</span>
+
+                                <strong>
+                                    24/7
+                                </strong>
+
+                                <span>
+                                    Emergency Response
+                                </span>
+
                             </div>
 
                         </div>
+
 
                     </div>
 
@@ -197,21 +272,44 @@ function LandingPage() {
 
                         <div className="network-line"></div>
 
+
                         <div className="network-node node-one">
-                            <ShieldCheck size={18} />
+
+                            <ShieldCheck
+                                size={18}
+                            />
+
                         </div>
+
 
                         <div className="network-node node-two">
-                            <Radio size={18} />
+
+                            <Radio
+                                size={18}
+                            />
+
                         </div>
+
 
                         <div className="network-node node-three">
-                            <Activity size={18} />
+
+                            <Activity
+                                size={18}
+                            />
+
                         </div>
 
+
                         <div className="network-center">
-                            <Waves size={26} />
-                            <span>SHONGKOT</span>
+
+                            <Waves
+                                size={26}
+                            />
+
+                            <span>
+                                SHONGKOT
+                            </span>
+
                         </div>
 
                     </div>
@@ -229,21 +327,28 @@ function LandingPage() {
 
                     </div>
 
+
                 </div>
+
 
             </div>
 
 
-            {/* Bottom Feature Bar */}
             <div className="landing-features">
+
 
                 <div className="landing-feature">
 
                     <div className="feature-icon">
-                        <Activity size={19} />
+
+                        <Activity
+                            size={19}
+                        />
+
                     </div>
 
                     <div>
+
                         <strong>
                             Predict
                         </strong>
@@ -251,6 +356,7 @@ function LandingPage() {
                         <span>
                             Monitor real-time flood risk
                         </span>
+
                     </div>
 
                 </div>
@@ -259,10 +365,15 @@ function LandingPage() {
                 <div className="landing-feature">
 
                     <div className="feature-icon">
-                        <Radio size={19} />
+
+                        <Radio
+                            size={19}
+                        />
+
                     </div>
 
                     <div>
+
                         <strong>
                             Coordinate
                         </strong>
@@ -270,6 +381,7 @@ function LandingPage() {
                         <span>
                             Connect emergency responders
                         </span>
+
                     </div>
 
                 </div>
@@ -278,10 +390,15 @@ function LandingPage() {
                 <div className="landing-feature">
 
                     <div className="feature-icon">
-                        <ShieldCheck size={19} />
+
+                        <ShieldCheck
+                            size={19}
+                        />
+
                     </div>
 
                     <div>
+
                         <strong>
                             Protect
                         </strong>
@@ -289,14 +406,19 @@ function LandingPage() {
                         <span>
                             Keep communities informed
                         </span>
+
                     </div>
 
                 </div>
 
+
             </div>
 
+
         </div>
+
     );
+
 }
 
 
@@ -306,11 +428,14 @@ function App() {
 
         <BrowserRouter>
 
+
             <Routes>
 
-                {/* =========================
-                    PUBLIC LANDING PAGE
-                ========================= */}
+
+                {/* =========================================
+                    PUBLIC ROUTES
+                ========================================= */}
+
 
                 <Route
                     path="/"
@@ -322,10 +447,6 @@ function App() {
                 />
 
 
-                {/* =========================
-                    AUTHENTICATION
-                ========================= */}
-
                 <Route
                     path="/login"
                     element={
@@ -334,6 +455,7 @@ function App() {
                         </PublicLayout>
                     }
                 />
+
 
                 <Route
                     path="/register"
@@ -347,25 +469,41 @@ function App() {
 
                 <Route
                     path="/unauthorized"
-                    element={<Unauthorized />}
+                    element={
+                        <Unauthorized />
+                    }
                 />
 
 
-                {/* =========================
+                {/* =========================================
                     PROTECTED ROUTES
-                ========================= */}
+                ========================================= */}
 
-                <Route element={<ProtectedLayout />}>
+
+                <Route
+                    element={
+                        <ProtectedLayout />
+                    }
+                >
+
+
+                    {/* CITIZEN DASHBOARD */}
 
                     <Route
                         path="/citizen-dashboard"
                         element={
-                            <ProtectedRoute allowedRoles={["citizen"]}>
+                            <ProtectedRoute
+                                allowedRoles={[
+                                    "citizen",
+                                ]}
+                            >
                                 <CitizenDashboard />
                             </ProtectedRoute>
                         }
                     />
 
+
+                    {/* AUTHORITY DASHBOARD */}
 
                     <Route
                         path="/authority-dashboard"
@@ -382,15 +520,23 @@ function App() {
                     />
 
 
+                    {/* ADMIN DASHBOARD */}
+
                     <Route
                         path="/admin-dashboard"
                         element={
-                            <ProtectedRoute allowedRoles={["admin"]}>
+                            <ProtectedRoute
+                                allowedRoles={[
+                                    "admin",
+                                ]}
+                            >
                                 <Dashboard />
                             </ProtectedRoute>
                         }
                     />
 
+
+                    {/* DISTRICTS */}
 
                     <Route
                         path="/districts"
@@ -408,6 +554,8 @@ function App() {
                     />
 
 
+                    {/* INCIDENTS */}
+
                     <Route
                         path="/incidents"
                         element={
@@ -422,6 +570,8 @@ function App() {
                         }
                     />
 
+
+                    {/* HOSPITALS */}
 
                     <Route
                         path="/hospitals"
@@ -439,6 +589,8 @@ function App() {
                     />
 
 
+                    {/* BROADCASTS */}
+
                     <Route
                         path="/broadcasts"
                         element={
@@ -455,6 +607,8 @@ function App() {
                     />
 
 
+                    {/* REPORT INCIDENT */}
+
                     <Route
                         path="/report-incident"
                         element={
@@ -470,12 +624,49 @@ function App() {
                         }
                     />
 
+
+                    {/* ANALYTICS */}
+
+                    <Route
+                        path="/analytics"
+                        element={
+                            <ProtectedRoute
+                                allowedRoles={[
+                                    "authority",
+                                    "admin",
+                                ]}
+                            >
+                                <Analytics />
+                            </ProtectedRoute>
+                        }
+                    />
+
+
+                    {/* PROFILE */}
+
+                    <Route
+                        path="/profile"
+                        element={
+                            <ProtectedRoute
+                                allowedRoles={[
+                                    "citizen",
+                                    "authority",
+                                    "admin",
+                                ]}
+                            >
+                                <Profile />
+                            </ProtectedRoute>
+                        }
+                    />
+
+
                 </Route>
 
 
-                {/* =========================
-                    FALLBACK
-                ========================= */}
+                {/* =========================================
+                    FALLBACK ROUTES
+                ========================================= */}
+
 
                 <Route
                     path="/dashboard"
@@ -487,6 +678,7 @@ function App() {
                     }
                 />
 
+
                 <Route
                     path="*"
                     element={
@@ -497,7 +689,9 @@ function App() {
                     }
                 />
 
+
             </Routes>
+
 
         </BrowserRouter>
 
